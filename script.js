@@ -38,7 +38,7 @@ let tamanho_selecionado = 1;
 let cor_selecionada = 1;
 
 function trocar_imagem() {
-    const id_opcao_selecionada = document.querySelector('[name="opcao-imagem"]: checked').id;
+    const id_opcao_selecionada = document.querySelector('[name="opcao-imagem"]:checked').id;
     imagem_selecionada = id_opcao_selecionada.charAt(0);
     imagem_visualizacao.src = './imagens/opcoes-cores/' + opcoes_cores[cor_selecionada].pasta + '/imagem-' + imagem_selecionada + '.jpeg';
 }
