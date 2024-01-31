@@ -44,5 +44,10 @@ function trocar_tamanho() {
     //mudar texto do titulo do produto
     titulo_produto.innerText = 'Pulseira loop esportiva azul-inverno para caixa de ' + opcoes_tamanho[tamanho_selecionado];
     //mudar tamanho da imagem de acordo com a opção selecionada
-    
+    if (opcoes_tamanho[tamanho_selecionado] === '41 mm') {
+        imagem_visualizacao.classList.add('caixa-pequena');
+        //'caixa pequena' esta no doc css
+    } else {
+        imagem_visualizacao.classList.remove('caixa-pequena');
+    }
 }
